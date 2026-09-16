@@ -2,7 +2,7 @@
 
 **TransOrg AgentIQ Datathon 2026 — Track 3: AgriTech**
 
-🔗 **Live demo:** [mandi-grid.vercel.app](https://mandi-grid.vercel.app/)
+🔗 **Live demo:** []()
 
 ---
 
@@ -54,15 +54,6 @@ RAW DATA SOURCES
 
 *(`pipeline_architecture.png` has the full visual diagram.)*
 
-### The application layer
-
-On top of the governed analytics, there are two ways to actually use the data:
-
-- **Streamlit dashboard (`app.py`)** — the executive view: KPI cards, trends, comparisons, rankings, and the rainfall-vs-arrivals relationship.
-- **Full web app** — a React frontend talking to a Python backend, built for a more conversational experience:
-  - **Frontend:** React + Vite + Tailwind CSS + Recharts
-  - **Backend:** Python FastAPI + Pandas
-  - **AI engine:** Groq API (`groq/compound-mini` model), used to turn plain-English questions into structured queries and conversational answers
 
 ---
 
