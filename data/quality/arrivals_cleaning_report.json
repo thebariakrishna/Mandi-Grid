@@ -1,0 +1,44 @@
+{
+  "dataset": "track3_mandi_arrivals.csv",
+  "raw_row_count": 25750,
+  "cleaned_row_count": 25000,
+  "rows_removed": 750,
+  "exact_duplicate_rows_found": 750,
+  "negative_quantities_found": 1261,
+  "negative_quantities_after_conversion": 1261,
+  "raw_missing_values": {
+    "arrival_id": 484,
+    "date": 0,
+    "mandi_id": 0,
+    "crop_name": 0,
+    "variety": 3735,
+    "arrival_quantity": 0,
+    "unit": 5143,
+    "farmer_count": 3899
+  },
+  "cleaned_missing_values": {
+    "arrival_id": 476,
+    "date": 0,
+    "mandi_id": 0,
+    "crop_name": 0,
+    "variety": 3627,
+    "arrival_quantity_original": 5004,
+    "unit_original": 5004,
+    "arrival_quantity_qtl": 6237,
+    "farmer_count": 3800
+  },
+  "rules_applied": [
+    "Normalize whitespace",
+    "Standardize crop names",
+    "Standardize unit representations",
+    "Convert quantities to Quintals",
+    "1 Quintal = 100 KG",
+    "1 Tonne = 10 Quintals",
+    "Preserve original quantity and unit",
+    "Convert dates to datetime",
+    "Remove exact duplicate rows",
+    "Convert negative analytical quantities to missing",
+    "Do not invent missing units",
+    "Do not invent missing crop names"
+  ]
+}

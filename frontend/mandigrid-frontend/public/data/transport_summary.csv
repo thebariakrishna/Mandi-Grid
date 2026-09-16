@@ -1,0 +1,7 @@
+destination_warehouse,total_trips,avg_transit_hours,transit_delay_rate_percent
+Export-Terminal,1448,13.627595917740946,24.59
+WH-Central,1428,13.852581504824153,26.4
+WH-East,1375,13.650974343434344,24.29
+WH-North,1503,13.70576698454942,24.95
+WH-South,1456,13.468739697802198,23.42
+WH-West,1456,14.056027930402932,26.17

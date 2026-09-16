@@ -1,0 +1,38 @@
+{
+  "dataset": "track3_mandi_master.csv",
+  "input_file": "C:\\Users\\Himanshu Kansal\\Downloads\\Datathon\\agritech-datathon\\agritech-datathon\\data\\raw\\track3_mandi_master.csv",
+  "output_file": "C:\\Users\\Himanshu Kansal\\Downloads\\Datathon\\agritech-datathon\\agritech-datathon\\data\\processed\\clean_mandi_master.csv",
+  "raw_row_count": 60,
+  "cleaned_row_count": 57,
+  "rows_removed": 3,
+  "exact_duplicate_rows_removed": 3,
+  "duplicate_mandi_ids_after_deduplication": 0,
+  "invalid_area_values": 0,
+  "raw_missing_values": {
+    "mandi_id": 0,
+    "mandi_name": 0,
+    "district": 4,
+    "state": 4,
+    "mandi_type": 11,
+    "total_area_acres": 6
+  },
+  "cleaned_missing_values": {
+    "mandi_id": 0,
+    "mandi_name": 0,
+    "district": 4,
+    "state": 4,
+    "mandi_type": 11,
+    "total_area_acres": 6
+  },
+  "rules_applied": [
+    "Trim whitespace from text fields",
+    "Collapse repeated whitespace",
+    "Convert empty text values to missing",
+    "Standardize mandi_type values",
+    "Convert total_area_acres to numeric",
+    "Remove exact duplicate rows",
+    "Do not invent missing district/state values",
+    "Do not correct geographic information based only on mandi name",
+    "Convert non-positive area values to missing"
+  ]
+}

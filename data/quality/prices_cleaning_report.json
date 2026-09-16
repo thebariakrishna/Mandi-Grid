@@ -1,0 +1,51 @@
+{
+  "dataset": "track3_price_and_msp.json",
+  "raw_row_count": 12000,
+  "cleaned_row_count": 12000,
+  "rows_removed": 0,
+  "exact_duplicate_rows_found": 0,
+  "invalid_price_order_rows": 0,
+  "negative_price_rows": 0,
+  "raw_missing_values": {
+    "record_id": 0,
+    "date": 0,
+    "mandi_id": 1235,
+    "district": 773,
+    "crop_name": 0,
+    "min_price": 0,
+    "max_price": 0,
+    "modal_price": 0,
+    "msp": 0
+  },
+  "cleaned_missing_values": {
+    "record_id": 0,
+    "date": 0,
+    "mandi_id": 1235,
+    "district": 1546,
+    "crop_name": 0,
+    "min_price_original": 0,
+    "max_price_original": 0,
+    "modal_price_original": 0,
+    "msp_original": 0,
+    "min_price": 598,
+    "max_price": 598,
+    "modal_price": 610,
+    "msp": 2377
+  },
+  "rules_applied": [
+    "Normalize whitespace",
+    "Normalize empty strings to missing",
+    "Standardize known crop-name aliases",
+    "Preserve unknown crop names",
+    "Parse messy INR price strings",
+    "Remove currency symbols and separators",
+    "Convert prices to numeric INR",
+    "Convert dates to datetime",
+    "Detect invalid min/modal/max price ordering",
+    "Convert negative prices to missing",
+    "Remove exact duplicate rows",
+    "Preserve original price representations",
+    "Do not invent missing mandi IDs",
+    "Do not invent missing district values"
+  ]
+}

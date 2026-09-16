@@ -1,0 +1,897 @@
+[
+  {
+    "dataset": "track3_mandi_arrivals.csv",
+    "rows": 25750,
+    "columns": 8,
+    "column_names": [
+      "arrival_id",
+      "date",
+      "mandi_id",
+      "crop_name",
+      "variety",
+      "arrival_quantity",
+      "unit",
+      "farmer_count"
+    ],
+    "duplicate_rows": 750,
+    "columns_info": {
+      "arrival_id": {
+        "dtype": "str",
+        "missing_count": 484,
+        "missing_percentage": 1.88,
+        "unique_count": 24524,
+        "top_values": {
+          "nan": 484,
+          "ARR0010753": 2,
+          "ARR0003275": 2,
+          "ARR0004098": 2,
+          "ARR0019350": 2,
+          "ARR0003266": 2,
+          "ARR0003048": 2,
+          "ARR0013641": 2,
+          "ARR0005816": 2,
+          "ARR0006650": 2,
+          "ARR0020854": 2,
+          "ARR0001203": 2,
+          "ARR0000429": 2,
+          "ARR0000398": 2,
+          "ARR0020708": 2
+        }
+      },
+      "date": {
+        "dtype": "str",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "unique_count": 1512,
+        "top_values": {
+          "07/04/2026": 35,
+          "2026-06-02": 33,
+          "27/07/2026": 33,
+          "22/05/2026": 33,
+          "2026-07-24": 32,
+          "2026-02-02": 31,
+          "08/06/2026": 31,
+          "28/08/2026": 31,
+          "22/06/2026": 31,
+          "31/03/2026": 30,
+          "2026-03-21": 30,
+          "06.06.2026": 30,
+          "2026-09-04": 30,
+          "2026-01-19": 30,
+          "03/03/2026": 29
+        }
+      },
+      "mandi_id": {
+        "dtype": "str",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "unique_count": 342,
+        "top_values": {
+          "MANDI002": 233,
+          "MANDI022": 226,
+          "MANDI051": 225,
+          "MANDI048": 223,
+          "MANDI026": 220,
+          "MANDI040": 220,
+          "MANDI056": 220,
+          "MANDI037": 219,
+          "MANDI020": 218,
+          "MANDI019": 216,
+          "MANDI007": 215,
+          "MANDI043": 215,
+          "MANDI031": 215,
+          "MANDI032": 214,
+          "MANDI041": 213
+        }
+      },
+      "crop_name": {
+        "dtype": "str",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "unique_count": 36,
+        "top_values": {
+          "Sugarcane": 918,
+          "Cotton": 913,
+          "Mustard": 909,
+          "गन्ना": 896,
+          "Sarson": 887,
+          "Sarso": 874,
+          "कपास": 863,
+          "sugarcane": 851,
+          "सरसों": 843,
+          "Narma": 837,
+          "Ganna": 831,
+          "mustard": 816,
+          "cotton": 812,
+          "Kapas": 790,
+          "Ganne": 782
+        }
+      },
+      "variety": {
+        "dtype": "str",
+        "missing_count": 3735,
+        "missing_percentage": 14.5,
+        "unique_count": 6,
+        "top_values": {
+          "nan": 3735,
+          "Local": 3721,
+          "PBW-343": 3698,
+          "Hybrid": 3671,
+          "HD-2967": 3644,
+          "Pusa-1121": 3644,
+          "Premium": 3637
+        }
+      },
+      "arrival_quantity": {
+        "dtype": "str",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "unique_count": 23609,
+        "top_values": {
+          "2647.0": 4,
+          "5549.0": 4,
+          "154.41": 4,
+          "21520.0": 4,
+          "45.62 qtl": 4,
+          "43.11": 4,
+          "15999.0": 3,
+          "23947.0": 3,
+          "12.656": 3,
+          "24,318.0 KG": 3,
+          "44.707": 3,
+          "2.0309999999999997": 3,
+          "156.85": 3,
+          "25.412": 3,
+          "4.345000000000001": 3
+        }
+      },
+      "unit": {
+        "dtype": "str",
+        "missing_count": 5143,
+        "missing_percentage": 19.97,
+        "unique_count": 14,
+        "top_values": {
+          "nan": 5143,
+          "Qtl": 2114,
+          "KG": 1872,
+          "Q": 1615,
+          "quintal": 1571,
+          "qtl": 1533,
+          "Quintals": 1488,
+          "KGS": 1341,
+          "Kilo": 1338,
+          "MT": 1331,
+          "T": 1296,
+          "tonnes": 1294,
+          "kg": 1293,
+          "Kgs": 1284,
+          "Tonnes": 1237
+        }
+      },
+      "farmer_count": {
+        "dtype": "float64",
+        "missing_count": 3899,
+        "missing_percentage": 15.14,
+        "unique_count": 146,
+        "min": 5.0,
+        "max": 150.0,
+        "mean": 77.61626470184432,
+        "median": 78.0
+      }
+    }
+  },
+  {
+    "dataset": "track3_mandi_master.csv",
+    "rows": 60,
+    "columns": 6,
+    "column_names": [
+      "mandi_id",
+      "mandi_name",
+      "district",
+      "state",
+      "mandi_type",
+      "total_area_acres"
+    ],
+    "duplicate_rows": 3,
+    "columns_info": {
+      "mandi_id": {
+        "dtype": "str",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "unique_count": 57,
+        "top_values": {
+          "MANDI001": 2,
+          "MANDI006": 2,
+          "MANDI031": 2,
+          "MANDI037": 1,
+          "MANDI046": 1,
+          "MANDI014": 1,
+          "MANDI055": 1,
+          "MANDI034": 1,
+          "MANDI049": 1,
+          "MANDI013": 1,
+          "MANDI047": 1,
+          "MANDI051": 1,
+          "MANDI032": 1,
+          "MANDI004": 1,
+          "MANDI053": 1
+        }
+      },
+      "mandi_name": {
+        "dtype": "str",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "unique_count": 57,
+        "top_values": {
+          "Hyderabad Mandi": 2,
+          "Kochi Mandi": 2,
+          "Nangloi Jat Mandi": 2,
+          "Jorhat Grain Market": 1,
+          "Baranagar Market": 1,
+          "Bathinda Grain Market": 1,
+          "Chandigarh APMC": 1,
+          "Ludhiana Grain Market": 1,
+          "Machilipatnam Mandi": 1,
+          "Aurangabad Market": 1,
+          "Orai Market": 1,
+          "Gulbarga Market": 1,
+          "Chapra Grain Market": 1,
+          "Khandwa Grain Market": 1,
+          "Panihati Market": 1
+        }
+      },
+      "district": {
+        "dtype": "str",
+        "missing_count": 4,
+        "missing_percentage": 6.67,
+        "unique_count": 27,
+        "top_values": {
+          "Amritsar": 5,
+          "nan": 4,
+          "Patiala": 4,
+          "Saharanpur": 4,
+          "Bareilly": 3,
+          "Muzaffarnagar": 3,
+          "Ludhiana": 3,
+          "Hisar": 3,
+          "Sirsa": 3,
+          "ludhiana": 2,
+          "Kurukshetra": 2,
+          "Ambala": 2,
+          "Jalandhar": 2,
+          "Agra": 2,
+          "Ferozepur": 2
+        }
+      },
+      "state": {
+        "dtype": "str",
+        "missing_count": 4,
+        "missing_percentage": 6.67,
+        "unique_count": 3,
+        "top_values": {
+          "Punjab": 22,
+          "Haryana": 21,
+          "Uttar Pradesh": 13,
+          "nan": 4
+        }
+      },
+      "mandi_type": {
+        "dtype": "str",
+        "missing_count": 11,
+        "missing_percentage": 18.33,
+        "unique_count": 5,
+        "top_values": {
+          "APMC": 15,
+          "nan": 11,
+          "Private": 10,
+          "Direct": 10,
+          "PRIVATE": 8,
+          "apmc": 6
+        }
+      },
+      "total_area_acres": {
+        "dtype": "float64",
+        "missing_count": 6,
+        "missing_percentage": 10.0,
+        "unique_count": 34,
+        "min": 5.0,
+        "max": 48.0,
+        "mean": 27.61111111111111,
+        "median": 27.5
+      }
+    }
+  },
+  {
+    "dataset": "track3_price_and_msp.json",
+    "rows": 12000,
+    "columns": 9,
+    "column_names": [
+      "record_id",
+      "date",
+      "mandi_id",
+      "district",
+      "crop_name",
+      "min_price",
+      "max_price",
+      "modal_price",
+      "msp"
+    ],
+    "duplicate_rows": 0,
+    "columns_info": {
+      "record_id": {
+        "dtype": "str",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "unique_count": 12000,
+        "top_values": {
+          "PR001650": 1,
+          "PR000246": 1,
+          "PR010091": 1,
+          "PR000982": 1,
+          "PR001708": 1,
+          "PR004312": 1,
+          "PR000288": 1,
+          "PR002536": 1,
+          "PR009427": 1,
+          "PR003418": 1,
+          "PR001250": 1,
+          "PR008959": 1,
+          "PR004344": 1,
+          "PR008040": 1,
+          "PR002773": 1
+        }
+      },
+      "date": {
+        "dtype": "datetime64[us]",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "unique_count": 276,
+        "top_values": {
+          "2026-04-18 00:00:00": 65,
+          "2026-03-04 00:00:00": 65,
+          "2026-02-02 00:00:00": 64,
+          "2026-03-02 00:00:00": 63,
+          "2026-08-04 00:00:00": 63,
+          "2026-02-09 00:00:00": 63,
+          "2026-03-19 00:00:00": 63,
+          "2026-08-08 00:00:00": 62,
+          "2026-06-03 00:00:00": 62,
+          "2026-08-31 00:00:00": 61,
+          "2026-05-02 00:00:00": 60,
+          "2026-04-23 00:00:00": 59,
+          "2026-01-27 00:00:00": 59,
+          "2026-05-23 00:00:00": 59,
+          "2026-02-23 00:00:00": 58
+        }
+      },
+      "mandi_id": {
+        "dtype": "str",
+        "missing_count": 1235,
+        "missing_percentage": 10.29,
+        "unique_count": 342,
+        "top_values": {
+          "nan": 1235,
+          "MANDI020": 105,
+          "MANDI002": 102,
+          "MANDI029": 102,
+          "MANDI041": 102,
+          "MANDI049": 101,
+          "MANDI014": 99,
+          "MANDI036": 98,
+          "MANDI015": 95,
+          "MANDI017": 94,
+          "MANDI054": 94,
+          "MANDI056": 93,
+          "MANDI005": 92,
+          "MANDI001": 92,
+          "MANDI012": 92
+        }
+      },
+      "district": {
+        "dtype": "str",
+        "missing_count": 773,
+        "missing_percentage": 6.44,
+        "unique_count": 14,
+        "top_values": {
+          "Kurukshetra": 843,
+          "Ludhiana": 841,
+          "Ferozepur": 832,
+          "Ambala": 831,
+          "Moga": 809,
+          "Jalandhar": 807,
+          "Fatehabad": 803,
+          "Bathinda": 799,
+          "Amritsar": 791,
+          "Hisar": 783,
+          "Patiala": 780,
+          "Sirsa": 774,
+          "nan": 773,
+          "": 773,
+          "Karnal": 761
+        }
+      },
+      "crop_name": {
+        "dtype": "str",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "unique_count": 36,
+        "top_values": {
+          "Kapas": 442,
+          "Ganna": 442,
+          "गन्ना": 415,
+          "Sarso": 414,
+          "सरसों": 412,
+          "Narma": 412,
+          "sugarcane": 404,
+          "Sarson": 403,
+          "Cotton": 394,
+          "Sugarcane": 394,
+          "mustard": 394,
+          "Mustard": 388,
+          "cotton": 386,
+          "Maize": 365,
+          "कपास": 362
+        }
+      },
+      "min_price": {
+        "dtype": "object",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "unique_count": 10163,
+        "top_values": {
+          "": 598,
+          "INR 1,936": 9,
+          "INR 1,970": 7,
+          "Rs. 2,140": 7,
+          "INR 1,877": 6,
+          "Rs. 2,280": 6,
+          "Rs. 2,288": 6,
+          "INR 2,110": 6,
+          "Rs. 1,947": 6,
+          "Rs. 2,112": 5,
+          "Rs. 2,164": 5,
+          "INR 2,013": 5,
+          "Rs. 2,050": 5,
+          "Rs. 2,264": 5,
+          "Rs. 2,105": 5
+        }
+      },
+      "max_price": {
+        "dtype": "object",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "unique_count": 10403,
+        "top_values": {
+          "": 598,
+          "INR 2,193": 7,
+          "INR 2,388": 7,
+          "INR 2,288": 7,
+          "INR 2,447": 5,
+          "Rs. 2,609": 5,
+          "INR 2,198": 5,
+          "INR 2,211": 5,
+          "INR 2,448": 5,
+          "Rs. 2,197": 5,
+          "INR 2,482": 5,
+          "INR 1,988": 5,
+          "Rs. 2,242": 5,
+          "INR 2,491": 5,
+          "Rs. 2,210": 5
+        }
+      },
+      "modal_price": {
+        "dtype": "object",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "unique_count": 10230,
+        "top_values": {
+          "": 610,
+          "Rs. 2,170": 7,
+          "Rs. 2,284": 7,
+          "INR 2,337": 7,
+          "Rs. 2,029": 6,
+          "INR 2,306": 6,
+          "INR 2,079": 6,
+          "INR 2,040": 6,
+          "Rs. 2,241": 6,
+          "INR 2,353": 5,
+          "INR 2,290": 5,
+          "Rs. 2,145": 5,
+          "Rs. 2,031": 5,
+          "INR 2,115": 5,
+          "Rs. 2,236": 5
+        }
+      },
+      "msp": {
+        "dtype": "object",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "unique_count": 37,
+        "top_values": {
+          "": 2377,
+          "2090": 430,
+          "5650": 429,
+          "6620": 420,
+          "3500": 409,
+          "2183": 404,
+          "2275": 402,
+          "₹2,275.00": 360,
+          "₹2,090.00": 354,
+          "₹5,650.00": 349,
+          "₹3,500.00": 319,
+          "₹6,620.00": 314,
+          "₹2,183.00": 308,
+          "INR 2,183": 297,
+          "INR 6,620": 275
+        }
+      }
+    }
+  },
+  {
+    "dataset": "track3_transport_logistics.csv",
+    "rows": 10400,
+    "columns": 10,
+    "column_names": [
+      "trip_id",
+      "mandi_id",
+      "destination_warehouse",
+      "departure_time",
+      "arrival_time",
+      "transit_hours",
+      "distance",
+      "distance_unit",
+      "vehicle_no",
+      "driver_id"
+    ],
+    "duplicate_rows": 400,
+    "columns_info": {
+      "trip_id": {
+        "dtype": "str",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "unique_count": 10000,
+        "top_values": {
+          "TRP008869": 2,
+          "TRP000036": 2,
+          "TRP005795": 2,
+          "TRP000040": 2,
+          "TRP008147": 2,
+          "TRP006177": 2,
+          "TRP000034": 2,
+          "TRP001122": 2,
+          "TRP000305": 2,
+          "TRP000624": 2,
+          "TRP000440": 2,
+          "TRP007232": 2,
+          "TRP001248": 2,
+          "TRP007389": 2,
+          "TRP005382": 2
+        }
+      },
+      "mandi_id": {
+        "dtype": "str",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "unique_count": 342,
+        "top_values": {
+          "MANDI037": 105,
+          "MANDI056": 102,
+          "MANDI011": 101,
+          "MANDI008": 97,
+          "MANDI042": 97,
+          "MANDI027": 95,
+          "MANDI038": 94,
+          "MANDI032": 94,
+          "MANDI045": 93,
+          "MANDI057": 91,
+          "MANDI053": 90,
+          "MANDI024": 89,
+          "MANDI043": 87,
+          "MANDI029": 86,
+          "MANDI023": 86
+        }
+      },
+      "destination_warehouse": {
+        "dtype": "str",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "unique_count": 6,
+        "top_values": {
+          "WH-North": 1782,
+          "WH-South": 1777,
+          "WH-West": 1746,
+          "WH-Central": 1725,
+          "Export-Terminal": 1702,
+          "WH-East": 1668
+        }
+      },
+      "departure_time": {
+        "dtype": "str",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "unique_count": 9315,
+        "top_values": {
+          "15/05/2026": 10,
+          "13/03/2026": 10,
+          "09/06/2026": 9,
+          "08/06/2026": 9,
+          "20/08/2026": 9,
+          "06/01/2026": 9,
+          "26/08/2026": 8,
+          "28/07/2026": 8,
+          "28/01/2026": 8,
+          "19/01/2026": 8,
+          "27/02/2026": 8,
+          "17/06/2026": 8,
+          "22/08/2026": 8,
+          "19/06/2026": 7,
+          "17/08/2026": 7
+        }
+      },
+      "arrival_time": {
+        "dtype": "str",
+        "missing_count": 1053,
+        "missing_percentage": 10.12,
+        "unique_count": 8353,
+        "top_values": {
+          "nan": 1053,
+          "11/02/2026": 10,
+          "04/05/2026": 10,
+          "13/06/2026": 10,
+          "16/07/2026": 10,
+          "26/08/2026": 9,
+          "29/08/2026": 8,
+          "30/08/2026": 8,
+          "18/05/2026": 8,
+          "21/06/2026": 8,
+          "01/06/2026": 8,
+          "22/06/2026": 7,
+          "24/02/2026": 7,
+          "05/08/2026": 7,
+          "10/03/2026": 7
+        }
+      },
+      "transit_hours": {
+        "dtype": "str",
+        "missing_count": 518,
+        "missing_percentage": 4.98,
+        "unique_count": 617,
+        "top_values": {
+          "nan": 518,
+          "12.9": 63,
+          "13.0": 58,
+          "9.5": 54,
+          "20.5": 54,
+          "10.8": 52,
+          "21.5": 52,
+          "18.4": 52,
+          "6.4": 51,
+          "20.3": 51,
+          "6.3": 51,
+          "16.1": 51,
+          "3.7": 51,
+          "11.9": 50,
+          "14.3": 49
+        }
+      },
+      "distance": {
+        "dtype": "str",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "unique_count": 7939,
+        "top_values": {
+          "956.7": 6,
+          "1052.5": 5,
+          "158.8": 5,
+          "1136.6": 5,
+          "540.5": 5,
+          "542.4": 5,
+          "678.3": 5,
+          "727.9": 5,
+          "523.8": 5,
+          "658.7": 5,
+          "165.5": 5,
+          "486.0": 4,
+          "724.0": 4,
+          "619.1": 4,
+          "775.5": 4
+        }
+      },
+      "distance_unit": {
+        "dtype": "str",
+        "missing_count": 1032,
+        "missing_percentage": 9.92,
+        "unique_count": 2,
+        "top_values": {
+          "km": 7815,
+          "miles": 1553,
+          "nan": 1032
+        }
+      },
+      "vehicle_no": {
+        "dtype": "str",
+        "missing_count": 1622,
+        "missing_percentage": 15.6,
+        "unique_count": 8438,
+        "top_values": {
+          "nan": 1622,
+          "RJ-52-CD-3274": 2,
+          "UP24-BC-3811": 2,
+          "HR-30-BC-9997": 2,
+          "pb 73-AB-4041": 2,
+          "DL-65-AB-3380": 2,
+          "RJ-78-BC-1965": 2,
+          "hr 20-CD-6378": 2,
+          "up 50-AB-4159": 2,
+          "HR-49-DF-9523": 2,
+          "hr 28-AB-1975": 2,
+          "hr 81-AB-3126": 2,
+          "RJ-36-BC-7540": 2,
+          "UP77-AB-5053": 2,
+          "PB 49 CD 8480": 2
+        }
+      },
+      "driver_id": {
+        "dtype": "str",
+        "missing_count": 1551,
+        "missing_percentage": 14.91,
+        "unique_count": 899,
+        "top_values": {
+          "nan": 1551,
+          "DRV915": 25,
+          "DRV523": 21,
+          "DRV307": 21,
+          "DRV765": 19,
+          "DRV350": 19,
+          "DRV871": 19,
+          "DRV866": 19,
+          "DRV742": 19,
+          "DRV297": 18,
+          "DRV891": 18,
+          "DRV512": 18,
+          "DRV179": 18,
+          "DRV833": 18,
+          "DRV974": 18
+        }
+      }
+    }
+  },
+  {
+    "dataset": "track3_weather_sensors.xlsx",
+    "rows": 15000,
+    "columns": 7,
+    "column_names": [
+      "sensor_id",
+      "timestamp",
+      "temperature",
+      "temp_unit",
+      "rainfall",
+      "rain_unit",
+      "humidity_percent"
+    ],
+    "duplicate_rows": 0,
+    "columns_info": {
+      "sensor_id": {
+        "dtype": "str",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "unique_count": 51,
+        "top_values": {
+          "UNKNOWN": 715,
+          "SEN050": 338,
+          "SEN005": 335,
+          "SEN025": 312,
+          "SEN029": 308,
+          "SEN017": 308,
+          "SEN010": 307,
+          "SEN008": 305,
+          "SEN007": 304,
+          "SEN009": 301,
+          "SEN004": 300,
+          "SEN013": 299,
+          "SEN026": 299,
+          "SEN019": 299,
+          "SEN015": 296
+        }
+      },
+      "timestamp": {
+        "dtype": "str",
+        "missing_count": 1555,
+        "missing_percentage": 10.37,
+        "unique_count": 13369,
+        "top_values": {
+          "nan": 1555,
+          "03/07/2026": 5,
+          "08/08/2026": 4,
+          "28/08/2026": 3,
+          "30/01/2026": 3,
+          "13/04/2026": 3,
+          "01/03/2026": 3,
+          "21/07/2026": 3,
+          "30/04/2026": 3,
+          "05/04/2026": 3,
+          "30/07/2026": 3,
+          "09/07/2026": 3,
+          "19/08/2026": 3,
+          "03/09/2026": 3,
+          "08/03/2026": 2
+        }
+      },
+      "temperature": {
+        "dtype": "object",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "unique_count": 753,
+        "top_values": {
+          "30.2": 41,
+          "67.6": 39,
+          "36.4": 39,
+          "16.7": 38,
+          "26.4": 38,
+          "31.2": 38,
+          "22.2": 37,
+          "25.1": 37,
+          "17.9": 37,
+          "35.9": 37,
+          "31.4": 37,
+          "21.9": 36,
+          "24.9": 36,
+          "29.7": 36,
+          "23.3": 36
+        }
+      },
+      "temp_unit": {
+        "dtype": "str",
+        "missing_count": 2263,
+        "missing_percentage": 15.09,
+        "unique_count": 8,
+        "top_values": {
+          "nan": 2263,
+          "c": 1733,
+          "°C": 1683,
+          "C": 1679,
+          "Celsius": 1622,
+          "f": 1551,
+          "°F": 1539,
+          "F": 1466,
+          "Fahrenheit": 1464
+        }
+      },
+      "rainfall": {
+        "dtype": "float64",
+        "missing_count": 791,
+        "missing_percentage": 5.27,
+        "unique_count": 1165,
+        "min": -50.0,
+        "max": 50.0,
+        "mean": 13.176203110704485,
+        "median": 10.0
+      },
+      "rain_unit": {
+        "dtype": "str",
+        "missing_count": 791,
+        "missing_percentage": 5.27,
+        "unique_count": 6,
+        "top_values": {
+          "mm": 4459,
+          "MM": 3038,
+          "millimeters": 2916,
+          "inches": 1285,
+          "in": 1270,
+          "inch": 1241,
+          "nan": 791
+        }
+      },
+      "humidity_percent": {
+        "dtype": "float64",
+        "missing_count": 1500,
+        "missing_percentage": 10.0,
+        "unique_count": 66,
+        "min": 30.0,
+        "max": 95.0,
+        "mean": 62.29837037037037,
+        "median": 62.0
+      }
+    }
+  }
+]

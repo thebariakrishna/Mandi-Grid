@@ -1,0 +1,157 @@
+======================================================================
+DATA QUALITY REPORT
+======================================================================
+
+Generated: 2026-09-13 16:11:00
+
+======================================================================
+1. DATASET SUMMARY
+======================================================================
+
+Mandi Master
+  Rows: 57
+  Columns: 6
+  Missing cells: 25
+  Missing rate: 7.31%
+  Duplicate rows: 0
+
+Mandi Arrivals
+  Rows: 25,000
+  Columns: 9
+  Missing cells: 24,148
+  Missing rate: 10.73%
+  Duplicate rows: 0
+
+Prices & MSP
+  Rows: 12,000
+  Columns: 13
+  Missing cells: 11,147
+  Missing rate: 7.15%
+  Duplicate rows: 0
+
+Transport Logistics
+  Rows: 10,000
+  Columns: 15
+  Missing cells: 12,236
+  Missing rate: 8.16%
+  Duplicate rows: 0
+
+Weather
+  Rows: 15,000
+  Columns: 11
+  Missing cells: 15,242
+  Missing rate: 9.24%
+  Duplicate rows: 0
+
+======================================================================
+2. CLEANING RESULTS
+======================================================================
+
+Mandi Master: 57 rows (expected 57) -> PASS
+Mandi Arrivals: 25,000 rows (expected 25,000) -> PASS
+Prices & MSP: 12,000 rows (expected 12,000) -> PASS
+Transport Logistics: 10,000 rows (expected 10,000) -> PASS
+Weather: 15,000 rows (expected 15,000) -> PASS
+
+======================================================================
+3. DUPLICATE CHECK
+======================================================================
+
+Mandi Master: 0 duplicate rows -> PASS
+Mandi Arrivals: 0 duplicate rows -> PASS
+Prices & MSP: 0 duplicate rows -> PASS
+Transport Logistics: 0 duplicate rows -> PASS
+Weather: 0 duplicate rows -> PASS
+
+======================================================================
+4. MISSING VALUE SUMMARY
+======================================================================
+
+Mandi Master
+  mandi_type: 11 (19.30%)
+  total_area_acres: 6 (10.53%)
+  state: 4 (7.02%)
+  district: 4 (7.02%)
+
+Mandi Arrivals
+  arrival_quantity_qtl: 6,237 (24.95%)
+  arrival_quantity_original: 5,004 (20.02%)
+  unit_original: 5,004 (20.02%)
+  farmer_count: 3,800 (15.20%)
+  variety: 3,627 (14.51%)
+  arrival_id: 476 (1.90%)
+
+Prices & MSP
+  msp: 2,377 (19.81%)
+  msp_original: 2,377 (19.81%)
+  district: 1,546 (12.88%)
+  mandi_id: 1,235 (10.29%)
+  modal_price: 610 (5.08%)
+  modal_price_original: 610 (5.08%)
+  min_price_original: 598 (4.98%)
+  max_price_original: 598 (4.98%)
+  max_price: 598 (4.98%)
+  min_price: 598 (4.98%)
+
+Transport Logistics
+  arrival_time: 1,991 (19.91%)
+  vehicle_no_original: 1,560 (15.60%)
+  vehicle_no: 1,560 (15.60%)
+  driver_id: 1,512 (15.12%)
+  transit_hours: 1,143 (11.43%)
+  distance: 992 (9.92%)
+  distance_unit: 992 (9.92%)
+  distance_km: 992 (9.92%)
+  distance_unit_original: 992 (9.92%)
+  transit_hours_original: 502 (5.02%)
+
+Weather
+  rainfall_mm: 2,309 (15.39%)
+  temp_unit_original: 2,263 (15.09%)
+  temperature_c: 2,263 (15.09%)
+  timestamp: 1,555 (10.37%)
+  date: 1,555 (10.37%)
+  humidity_original: 1,500 (10.00%)
+  humidity_percent: 1,500 (10.00%)
+  rainfall_original: 791 (5.27%)
+  rain_unit_original: 791 (5.27%)
+  sensor_id: 715 (4.77%)
+
+======================================================================
+5. BUSINESS RULE VALIDATION
+======================================================================
+
+Arrivals:
+  Quantity >= 0 -> PASS
+  Farmer count >= 0 -> PASS
+
+Prices:
+  Minimum price >= 0 -> PASS
+  Modal price >= 0 -> PASS
+  Maximum price >= 0 -> PASS
+  MSP >= 0 -> PASS
+  Minimum <= Modal <= Maximum -> PASS
+
+Transport:
+  Transit hours >= 0 -> PASS
+  Distance >= 0 -> PASS
+  Arrival timestamp >= Departure timestamp -> PASS
+
+Weather:
+  Temperature >= -273.15°C -> PASS
+  Rainfall >= 0 mm -> PASS
+  Humidity between 0% and 100% -> PASS
+
+Master:
+  Mandi ID present -> PASS
+
+======================================================================
+6. FINAL DATA QUALITY STATUS
+======================================================================
+
+All cleaned datasets contain zero duplicate rows.
+
+Business-rule validation: PASSED
+Overall data quality status: PASS
+
+======================================================================

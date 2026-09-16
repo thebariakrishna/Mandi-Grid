@@ -1,0 +1,132 @@
+{
+  "summary": {
+    "total_arrivals_qtl": 5963218.35,
+    "total_mandis": 57,
+    "total_crops": 6,
+    "total_price_records": 12000,
+    "valid_price_msp_observations": 9131,
+    "below_msp_count": 3667,
+    "below_msp_rate_pct": 40.16,
+    "governed_avg_modal_price_rs_qtl": 3794.21,
+    "governed_avg_msp_rs_qtl": 3711.62,
+    "governed_avg_price_gap_rs_qtl": 82.59,
+    "avg_transit_hours_overall": 13.53,
+    "transit_delay_rate_pct": 24.59,
+    "transit_delay_benchmark": "Data-derived relative delay benchmark: warehouse-level 75th percentile of transit time.",
+    "weather_date_coverage": {
+      "arrival_dates_count": 276,
+      "weather_dates_count": 252,
+      "unique_date_coverage_pct": 91.3,
+      "arrival_record_coverage_pct": 98.61
+    },
+    "rainfall_arrival_correlation": -0.0594,
+    "correlation_interpretation": "Linear association between daily average rainfall (mm) and daily total arrivals (Qtl). Note: represents association, not causation."
+  },
+  "top_5_mandis": [
+    {
+      "mandi_id": "MANDI026",
+      "mandi_name": "Tadipatri Mandi",
+      "district": "Hisar",
+      "state": "Haryana",
+      "total_arrival_qtl": 117127.67
+    },
+    {
+      "mandi_id": "MANDI041",
+      "mandi_name": "Gurgaon Grain Market",
+      "district": "Fatehabad",
+      "state": "Haryana",
+      "total_arrival_qtl": 116954.18
+    },
+    {
+      "mandi_id": "MANDI002",
+      "mandi_name": "Solapur Mandi",
+      "district": "Ludhiana",
+      "state": "Punjab",
+      "total_arrival_qtl": 114101.33
+    },
+    {
+      "mandi_id": "MANDI007",
+      "mandi_name": "Nashik Mandi",
+      "district": "Amritsar",
+      "state": "Punjab",
+      "total_arrival_qtl": 113729.71
+    },
+    {
+      "mandi_id": "MANDI012",
+      "mandi_name": "Gaya Grain Market",
+      "district": "Patiala",
+      "state": "Punjab",
+      "total_arrival_qtl": 113614.73
+    }
+  ],
+  "crop_distribution": [
+    {
+      "crop_name": "Mustard",
+      "total_arrival_qtl": 1021097.29,
+      "arrival_share_percent": 17.12
+    },
+    {
+      "crop_name": "Wheat",
+      "total_arrival_qtl": 1012807.01,
+      "arrival_share_percent": 16.98
+    },
+    {
+      "crop_name": "Sugarcane",
+      "total_arrival_qtl": 1005658.84,
+      "arrival_share_percent": 16.86
+    },
+    {
+      "crop_name": "Maize",
+      "total_arrival_qtl": 996980.64,
+      "arrival_share_percent": 16.72
+    },
+    {
+      "crop_name": "Cotton",
+      "total_arrival_qtl": 963568.47,
+      "arrival_share_percent": 16.16
+    },
+    {
+      "crop_name": "Rice",
+      "total_arrival_qtl": 963106.1,
+      "arrival_share_percent": 16.15
+    }
+  ],
+  "warehouse_logistics": [
+    {
+      "destination_warehouse": "WH-North",
+      "total_trips": 1710,
+      "avg_transit_hours": 13.47,
+      "transit_delay_rate_percent": 24.68
+    },
+    {
+      "destination_warehouse": "WH-South",
+      "total_trips": 1699,
+      "avg_transit_hours": 13.37,
+      "transit_delay_rate_percent": 24.37
+    },
+    {
+      "destination_warehouse": "WH-West",
+      "total_trips": 1681,
+      "avg_transit_hours": 13.76,
+      "transit_delay_rate_percent": 24.57
+    },
+    {
+      "destination_warehouse": "WH-Central",
+      "total_trips": 1660,
+      "avg_transit_hours": 13.64,
+      "transit_delay_rate_percent": 24.76
+    },
+    {
+      "destination_warehouse": "Export-Terminal",
+      "total_trips": 1640,
+      "avg_transit_hours": 13.42,
+      "transit_delay_rate_percent": 24.63
+    },
+    {
+      "destination_warehouse": "WH-East",
+      "total_trips": 1610,
+      "avg_transit_hours": 13.51,
+      "transit_delay_rate_percent": 24.53
+    }
+  ]
+}

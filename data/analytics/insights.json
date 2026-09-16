@@ -1,0 +1,69 @@
+{
+  "metadata": {
+    "generated_at": "2026-09-15",
+    "scope": "State Agricultural Board Analytics",
+    "total_records_processed": {
+      "arrivals": 24525,
+      "prices": 12000,
+      "trips": 10000,
+      "weather_observations": 15000
+    }
+  },
+  "insights": [
+    {
+      "id": "INS-001",
+      "category": "MARKET_MSP_RISK",
+      "title": "Highest MSP Crash Vulnerability",
+      "statement": "Wheat experiences the highest frequency of wholesale price crashes below MSP.",
+      "supporting_metrics": {
+        "crop_name": "Wheat",
+        "below_msp_rate_percent": 42.22,
+        "price_crash_count": 545,
+        "valid_modal_msp_observations": 1291,
+        "avg_price_gap_rs_qtl": 42.07
+      },
+      "methodology": "Computed across paired record-level modal price and MSP observations where MSP > 0. Denominator excludes records missing modal price or MSP."
+    },
+    {
+      "id": "INS-002",
+      "category": "LOGISTICS_BOTTLENECK",
+      "title": "Warehouse Transit Bottleneck",
+      "statement": "Transit routes destined for WH-West exhibit the longest average transit times.",
+      "supporting_metrics": {
+        "destination_warehouse": "WH-West",
+        "avg_transit_hours": 13.76,
+        "median_transit_hours": 13.4,
+        "delay_rate_percent": 24.57,
+        "total_trips": 1681
+      },
+      "methodology": "Aggregated from trip-level transit logs. Delay rate uses a data-derived relative benchmark: warehouse-level 75th percentile of transit time."
+    },
+    {
+      "id": "INS-003",
+      "category": "WEATHER_ASSOCIATION",
+      "title": "Rainfall vs Arrival Volume Association",
+      "statement": "Daily rainfall is negatively associated with daily mandi crop arrival volumes in aligned observations (Pearson r = -0.0594). This is a statistical association; it does not establish causation.",
+      "supporting_metrics": {
+        "correlation_coefficient": -0.0594,
+        "evaluation_days_count": 252,
+        "unique_date_coverage_pct": 91.3,
+        "arrival_record_coverage_pct": 98.61
+      },
+      "methodology": "Pearson correlation calculated after aggregating sensor rainfall (mm) and crop arrivals (Qtl) to daily state-wide level, then inner-joining on date. Correlation measures linear statistical association only. Aggregate correlation may also mask district-level differences. Does not establish causation."
+    },
+    {
+      "id": "INS-004",
+      "category": "MANDI_CONCENTRATION",
+      "title": "Top Mandi by Arrival Volume",
+      "statement": "Tadipatri Mandi (Hisar, Haryana) leads all 57 mandis in total crop arrivals.",
+      "supporting_metrics": {
+        "mandi_id": "MANDI026",
+        "mandi_name": "Tadipatri Mandi",
+        "total_arrival_qtl": 117127.67,
+        "unique_crops": 6,
+        "departed_trips": 167
+      },
+      "methodology": "Top mandis are ranked by cumulative arrival quantity in Qtl, summed across all observed crops and dates. All 57 mandis are included in ranking."
+    }
+  ]
+}

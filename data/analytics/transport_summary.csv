@@ -1,0 +1,7 @@
+destination_warehouse,total_trips,avg_transit_hours,median_transit_hours,min_transit_hours,max_transit_hours,avg_distance_km,delayed_trips_count,unique_mandis_served,transit_delay_rate_percent,delay_benchmark_note
+WH-North,1710,13.47,13.0,0.0,45.43,645.84,422,57,24.68,Data-derived relative delay benchmark: warehouse-level 75th percentile of transit time.
+WH-South,1699,13.37,13.0,0.0,47.63,644.42,414,57,24.37,Data-derived relative delay benchmark: warehouse-level 75th percentile of transit time.
+WH-West,1681,13.76,13.4,0.0,47.27,661.19,413,57,24.57,Data-derived relative delay benchmark: warehouse-level 75th percentile of transit time.
+WH-Central,1660,13.64,13.31,0.0,45.38,654.56,411,57,24.76,Data-derived relative delay benchmark: warehouse-level 75th percentile of transit time.
+Export-Terminal,1640,13.42,13.2,0.0,44.19,642.69,404,57,24.63,Data-derived relative delay benchmark: warehouse-level 75th percentile of transit time.
+WH-East,1610,13.51,13.11,0.0,44.38,661.84,395,57,24.53,Data-derived relative delay benchmark: warehouse-level 75th percentile of transit time.

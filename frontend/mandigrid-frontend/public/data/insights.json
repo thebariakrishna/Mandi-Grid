@@ -1,0 +1,18 @@
+[
+  {
+    "category": "Price Gap",
+    "statement": "40.16% of valid price records fell below MSP.",
+    "metric": 3667,
+    "comparison": 9131,
+    "dataset": "clean_price_and_msp.csv",
+    "methodology": "Filtered for non-negative, non-null modal_price and msp, and verified min <= modal <= max."
+  },
+  {
+    "category": "Logistics Efficiency",
+    "statement": "Overall average transit time is 13.73h, vs a median of 13.4h.",
+    "metric": 13.73,
+    "comparison": 13.4,
+    "dataset": "clean_transport_logistics.csv",
+    "methodology": "Calculated deterministically using Arrival Time - Departure Time."
+  }
+]
