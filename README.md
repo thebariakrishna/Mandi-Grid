@@ -2,7 +2,7 @@
 
 **TransOrg AgentIQ Datathon 2026 — Track 3: AgriTech**
 
-🔗 **Live demo:** []()
+🔗 **Live demo:** [https://mandi-grid-euel4dt9t-thebariakrishnas-projects.vercel.app/]()
 
 ---
 
